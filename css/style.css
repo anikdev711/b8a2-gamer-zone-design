@@ -216,10 +216,51 @@ body{
     font-weight: 700;
     color: #534C64;
 }
-
-
 /* we are gamer section styles ends here  */
+/* online game section style starts here  */
+.online-games-card{
+    width: 250px;
+    height: 400px;
+}
+.online-games-card img{
+    width: 250px;
+    height: 300px;
+    display: block;
+}
+.online-games-cards-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-left: 65px;
+    margin-top: 20px;
+}
+.online-games-card img:hover{
+    border: 2px solid red;
+}
+.online-games-title{
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 16px;
+}
+.online-games-title-purple{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.online-games-text{
+    text-align: center;
+    color: #534C64;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
 
+/* online game section style ends here  */
 
 
 
@@ -323,6 +364,22 @@ body{
         margin-left: 17px;
     }
 
+    /* online games section resoponsive  */
+    .online-games-title{
+        font-size: 1.25rem;
+    }
+    .online-games-title-purple{
+        font-size: 1.25rem;
+    }
+    .online-games-text{
+        font-size: 0.75rem;
+    }
+    .online-games-cards-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        margin-left: 45px;
+    }
+
 
     
     
@@ -396,5 +453,20 @@ body{
         margin-bottom: 30px;
         margin-left: 130px;
     }
+    /* online games section resoponsive  */
+    .online-games-title{
+        font-size: 2rem;
+    }
+    .online-games-title-purple{
+        font-size: 1.25rem;
+    }
+    .online-games-text{
+        font-size: 0.75rem;
+    }
+    .online-games-cards-container{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 60px;
+    }
+    
     
 }
